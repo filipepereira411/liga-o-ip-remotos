@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligação aos PCs</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .lista-pcs {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            max-width: 340px;
+        }
+        .botao-pc {
+            display: block;
+            background-color: #1e1e1e;
+            border: 2px solid #38bdf8;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .botao-pc span {
+            display: block;
+            font-size: 0.85rem;
+            color: #9ca3af;
+            font-weight: normal;
+            margin-top: 4px;
+        }
+        .botao-pc:active {
+            background-color: #38bdf8;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PCs Ligados</h1>
+
+    <div class="lista-pcs">
+        <a href="http://192.168.1.88" class="botao-pc">
+            DESKTOP-FSK7C12
+            <span>http://192.168.1.88</span>
+        </a>
+
+        <a href="http://1.xx" class="botao-pc">
+            ETPR-DELL-PC3
+            <span>Substituir XX pelo IP do PC</span>
+        </a>
+    </div>
+
+</body>
+</html>
